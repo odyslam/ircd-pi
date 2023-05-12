@@ -1,0 +1,7 @@
+version: '2.1'
+services:
+  ircd:
+    build: ./ircd
+    restart: 'unless-stopped'
+    ports:
+      - "6667:6667"
